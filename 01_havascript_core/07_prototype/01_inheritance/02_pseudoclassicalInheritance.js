@@ -28,3 +28,29 @@ Child.prototype.constructor = Child;
 const child = new Child('홍길동', 20);
 child.sayHello();
 child.sayAge();
+
+/* ------- 추가로 js의 class 문법 맛보기 ------*/
+class Parent2 {
+    constructor(name){
+        this.name = name;
+    }
+
+    sayHello() {
+        console.log(`Hello, I'm ${this.name}`);
+    }
+}
+
+class Child2 extends Parent2 {
+    constructor(name,age){
+        super(name);
+        this.age = age;
+    }
+
+    sayAge() {
+        console.log(`I'm ${this.age} years old`);
+    }
+}
+
+const child2 = new Child2('유관순', 15);
+child2.sayHello();
+child2.sayAge();
