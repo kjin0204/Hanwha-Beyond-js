@@ -31,7 +31,6 @@ function displayProduct2({producer, items, brnad = '엔코아'}){
     console.log('brand:', brnad);       // brand: 엔코아
 };
 
-
 displayProduct(exampleProduct);
 displayProduct2(exampleProduct);
 console.log(exampleProduct);
