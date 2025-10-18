@@ -3,6 +3,7 @@ let exampleProduct = {
     producer : '신사임당'
 };
 
+/* 1. 분해 할당을 활용 하지 않은 방식 */
 function displayProduct(obj){
     let {items, producer} = obj;
     items.push('test');
@@ -21,7 +22,7 @@ console.log('-------------------------')
 console.log(exampleProduct);
 console.log('-------------------------')
 
-/* 객체를 자동 으로 객체 구조 분해 할당이 됨 */
+/* 2. 객체를 자동 으로 객체 구조 분해 할당이 됨 */
 function displayProduct2({producer, items, brnad = '엔코아'}){
     console.log('------------------------display2--------------------------')
     items.push('123');
