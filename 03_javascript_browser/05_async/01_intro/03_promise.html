@@ -49,7 +49,8 @@
                 console.log(`then의 콜백함수에 넘어온 result : ${result}`);     // then의 콜백함수에 넘어온 result : 50
                 return increase(result);                                      // 예외 발생
             })
-            .catch(error => console.log(error))                               // 위에서 어느 곳이든 에러가 발생하면 에러를 catch 함
+            .catch(error => {                                                   // 위에서 어느 곳이든 에러가 발생하면 에러를 catch 함
+                console.log(error)})                                            /*Error: NumberTooBig    at 03_promise.html:18:35*/
             .finally(() => console.log('반드시 실행되고 반드시 해야 할 작업'));
 
             /*

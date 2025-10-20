@@ -1,6 +1,5 @@
 const now = Date.now();     //1970년 1월 1일 이후 현재시간까지 mili seconds 반환
 console.log(new Date(now));
-
 const date = new Date();
 
 console.log(Object.getOwnPropertyDescriptors(date));
