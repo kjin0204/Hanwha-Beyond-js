@@ -49,8 +49,10 @@
             
             result = await increase(result);
             console.log(result);
-            
-            result = await increase(result);
+            try{
+            result = await increase(result); } catch(e){
+console.log('테스트',e);
+            }
             console.log('run end ----------------------')
         }
 
